@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: rgb(180, 180, 180);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 0 auto;
+  column-gap: 20px;
+}
+.input {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+.input input {
+  /* flex: 1;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border: 1px solid #000;
+   
+
+     */
+  width: 70%;
+  padding: 10px;
+  font-size: 22px;
+  color: rgb(230, 136, 60);
+  outline: none;
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-color: rgb(32, 33, 36);
+}
+.input button {
+  cursor: pointer;
+}
+.input button:active {
+  color: rgb(230, 136, 60);
+  border: 2px solid rgb(230, 136, 60);
+}
+.input input:focus {
+  border: 2px solid rgb(230, 136, 60);
+}
+
+.task {
+  /* display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  border: 1px solid gray;
+  align-items: center; */
+  background-color: rgb(32, 33, 36);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 10px 10px;
+  color: rgb(230, 136, 60);
+}
+.title.tema__black {
+  color: rgb(230, 136, 60);
+}
+.btnDelite {
+  /* cursor: pointer;
+    padding: 10px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    width: 60px;
+    height: 36px; */
+  color: #f30;
+  border: 1px solid #f30;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.btnDelite:hover {
+  background-color: #f30;
+  color: #fff;
+}
+.text {
+  font-size: 16px;
+}
+.check input[type="checkbox"] {
+  display: none;
+}
+
+.check label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #000;
+    width: 40px;
+    height: 36px;
+    cursor: pointer; */
+
+  align-items: center;
+  border: 2px solid grey;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* .check label:hover i {
+  color: rgb(126, 207, 5);
+} */
+/* .check input[type="checkbox"]:checked + label i {
+  color: rgb(126, 207, 5);
+} */
+.check label i {
+  color: #fff;
+}
+.text.lh {
+  text-decoration: line-through;
+}
+
+.input_add.tema__black {
+  width: 70%;
+  padding: 10px;
+  font-size: 22px;
+  color: rgb(230, 136, 60);
+  outline: none;
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-color: rgb(32, 33, 36);
+}
+body.tema__black {
+  background-color: rgb(32, 33, 36);
+}
+.btn__add {
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-color: rgb(32, 33, 36);
+  padding: 10px;
+  text-transform: uppercase;
+  color: grey;
+}
+.btn__add.tema__black {
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-color: rgb(32, 33, 36);
+  padding: 10px;
+  text-transform: uppercase;
+  color: grey;
+}
+.btn__add.tema__black:hover {
+  color: rgb(230, 136, 60);
+  border-color: rgb(230, 136, 60);
+}
+.input_add.tema__black:focus {
+  border: 2px solid rgb(230, 136, 60);
+}
+.task__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.title {
+  color: rgb(32, 33, 36);
+  text-align: center;
+}
+.tema {
+  margin-top: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#tema_checkbox {
+  opacity: 0;
+}
+#tema_checkbox ~ label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("./image/sun-regular.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#tema_checkbox:checked ~ label::before {
+  background: url("./image/moon-solid.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.tema label {
+  cursor: pointer;
+}
